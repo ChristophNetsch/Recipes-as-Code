@@ -2,17 +2,17 @@ import asyncio
 
 
 INGREDIENTS = {
-    'peaches': 3,
-    'burrata_balls': 1,
-    'honey': 10,
-    'olive_oil': 1,
-    'vineagar': 1,
-    'chili_flakes': 1,
-    'salt': 1,
-    'pepper': 1,
-    'cashew': 1,
-    'sugar': 1,
-    'cherry_tomatoes': 1,
+    'peaches': 4, # pcs
+    'burrata_balls': 2, # pcs
+    'honey': 10, # mL
+    'olive_oil': 1, # tbsp
+    'vineagar': 1, # tbsp
+    'chili_flakes': 1, # tsp
+    'salt': 1, # tsp
+    'pepper': 1, # tsp
+    'cashew': 30, # g 
+    'sugar': 10, # g
+    'cherry_tomatoes': 10, # pcs
 }
 
 
