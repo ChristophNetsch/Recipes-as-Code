@@ -18,10 +18,10 @@ INGREDIENTS = {
 
 async def make_peaches_and_burrata():
     peach_slices = _cut(INGREDIENTS['peaches'], slices_per_peach=8)
-    sauteed_peach_slices = _sautee(peach_slices, INGREDIENTS['honey'], INGREDIENTS['chili_flakes'], INGREDIENTS['salt'])
+    sauteed_peach_slices = await _sautee(peach_slices, INGREDIENTS['honey'], INGREDIENTS['chili_flakes'], INGREDIENTS['salt'])
     caramelized_cashews = _caramelize(INGREDIENTS['cashew'], INGREDIENTS['sugar'])
     diced_tomatoes = _dice(INGREDIENTS['cherry_tomatoes'], style='brunoise')
-    return await _serve(sauteed_peach_slices, INGREDIENTS['burrata_balls'], INGREDIENTS['olive_oil'], INGREDIENTS['vineagar'], 
+    return _serve(sauteed_peach_slices, INGREDIENTS['burrata_balls'], INGREDIENTS['olive_oil'], INGREDIENTS['vineagar'], 
                         caramelized_cashews, diced_tomatoes, INGREDIENTS['pepper'], INGREDIENTS['salt'])
 
 def _cut(peaches, slices_per_peach=8):
